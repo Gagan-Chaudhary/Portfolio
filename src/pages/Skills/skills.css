@@ -1,0 +1,86 @@
+.skills-main {
+  background: #e1ebe465;
+  padding: 50px;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.skills-main h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+
+.skills-div a {
+  text-decoration: none;
+  color: black;
+}
+.card-container {
+  background: white;
+  width: 300px;
+  height: auto;
+}
+.card-container:hover {
+  transform: scale(1.2);
+}
+.frontend {
+  grid-area: frontend;
+}
+.backend {
+  grid-area: backend;
+}
+.languages {
+  grid-area: languages;
+}
+.database {
+  grid-area: database;
+}
+.hosting-platform {
+  grid-area: hosting-platform;
+}
+.version-control {
+  grid-area: version-control;
+}
+.tools {
+  grid-area: tools;
+}
+
+.skills-div {
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "frontend backend languages "
+    "frontend version-control hosting-platform "
+    "main database footer ";
+}
+.skill-card {
+  border: 2px solid rgb(24, 14, 14);
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  background: white;
+  /* padding-left: 40px; */
+  margin: 20px;
+}
+.skill-card img {
+  max-width: 2em;
+  height: auto;
+}
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+.skills-main h1 {
+  font-family: "Langar", cursive;
+  font-size: 60px;
+}
+.flex-skill {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  /* border: 1px solid black; */
+}
+.skill-name {
+  /* border: 1px solid black; */
+  padding: 10px;
+  /* border-bottom: 1px solid black; */
+  /* width: 100px; */
+}

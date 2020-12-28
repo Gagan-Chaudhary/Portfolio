@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+.about-main {
+  background: #191a1d;
+  color: white;
+  padding-bottom: 30px;
+  /* clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%); */
+}
+.about {
+  padding-top: 50px;
+  width: 50%;
+  /* border: 2px solid white;  */
+  margin: auto;
+  text-align: center;
+  /* justify-content: center; */
+}
+.about-image {
+  /* position: relative; */
+  /* right: 0px; */
+  padding: 20px;
+  /* border: 2px solid white; */
+  width: 50%;
+}
+
+.about-image img {
+  width: 600px;
+  height: 600px;
+  /* border: 1px solid white; */
+}
+.about h1 {
+  /* background-color: #181111; */
+  font-size: 4.5rem;
+  font-family: "Rubik", "Arial", sans-serif;
+}
+.about h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  font-family: "Rubik", "Arial", sans-serif;
+}
+button {
+  transition: all ease 0.3s;
+  font-size: 1.75rem;
+  padding: 26px 48px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 1000px;
+  border: none;
+  background: #4b6cc1;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-rendering: optimizeLegibility;
+  outline: none;
+  border: 0.1px solid #4b6cc1;
+}
+button:hover {
+  background: #191a1d;
+  /* border: 0.1px solid #4b6cc1; */
+  text-decoration: none;
+}

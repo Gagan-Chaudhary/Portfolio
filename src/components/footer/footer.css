@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+.footer {
+  background: #000000;
+  padding: 10px;
+}
+.footer p {
+  color: white;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 300;
+}

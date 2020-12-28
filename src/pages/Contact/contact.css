@@ -1,0 +1,91 @@
+.contact-main {
+  background: #252934;
+}
+.head {
+  font-family: Railway;
+}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+.contact-text {
+  color: white;
+}
+.contact-main {
+  background: #191a1d;
+  clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+  padding: 20px;
+  padding-top: 300px;
+}
+.flex {
+  display: flex;
+}
+.contact-main input,
+textarea {
+  background: #1e242c;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+}
+.work h2 {
+  color: white;
+  font-size: 3.25rem;
+  font-weight: 400;
+  font-family: "Rubik", "Arial", sans-serif;
+}
+.contact-main p {
+  font-weight: 300;
+  color: #04c2c9;
+  font-size: 1.625rem;
+}
+.work {
+  width: 50%;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  text-align: start;
+  /* text-align: center; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.social-media li {
+  /* display: -webkit-box; */
+  /* align-items: center; */
+  list-style: none;
+  padding: 20px;
+  /* border: 2px solid white; */
+  /* margin: auto; */
+  /* text-decoration: none; */
+}
+.social-media ul {
+  /* width: 200px; */
+  /* margin: auto; */
+  /* display: -webkit-box; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.social-media a {
+  text-decoration: none;
+  transition: color ease 0.3s;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.063em;
+  font-family: "Rubik", "Arial", sans-serif;
+  padding: 10px;
+  /* top: 0px; */
+  text-align: center;
+
+  position: relative;
+  top: -10px;
+}
+.social-media a:hover {
+  color: #3de0e6;
+}
+.social-media span {
+  /* display: none; */
+  padding-right: 20px;
+  margin: auto;
+  text-align: center;
+  /* border: 2px solid white; */
+  /* align-self: start; */
+}

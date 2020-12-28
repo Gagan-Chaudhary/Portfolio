@@ -1,0 +1,41 @@
+.project-main {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  /* background: grey */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+.project-main h1 {
+  font-family: "Langar", cursive;
+  font-size: 60px;
+}
+
+.project {
+  padding-top: 40px;
+}
+.projects-div img {
+  width: 600px;
+  height: auto;
+  border: 2px solid burlywood;
+}
+.projects-div {
+  display: grid;
+  justify-content: center;
+  grid-gap: 10px;
+  padding-top: 40px;
+}
+.project-box {
+  display: flex;
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: 2px solid black;
+  margin-bottom: 30px;
+}
+.project-details {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}

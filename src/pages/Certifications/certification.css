@@ -1,0 +1,37 @@
+.certification{
+    padding-top: 50px;
+}
+.main-container {
+  padding: 20px;
+  /* margin: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 40px;
+  /* clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%); */
+}
+
+.main-card {
+  /* border: 2px solid black; */
+  margin: 20px 40px;
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 1px 10px 1px rgb(51, 44, 44);
+}
+
+.main-card img {
+  width: 350px;
+  height: 340px;
+}
+
+.main-card img:hover {
+  transition: all ease 0.6s;
+  transform: scale(1.25);
+  cursor: pointer;
+}
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+.certificate-text {
+  font-family: "Langar", cursive;
+  font-size: 60px;
+}
