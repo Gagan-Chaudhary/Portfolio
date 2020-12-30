@@ -1,5 +1,5 @@
-.certification{
-    padding-top: 50px;
+.certification {
+  padding-top: 50px;
 }
 .main-container {
   padding: 20px;
@@ -22,6 +22,7 @@
 
 .main-card img {
   width: 350px;
+  /* width: 350px; */
   height: 340px;
 }
 
@@ -33,5 +34,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
 .certificate-text {
   font-family: "Langar", cursive;
-  font-size: 60px;
+  font-size: 3rem;
 }

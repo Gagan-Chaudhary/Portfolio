@@ -1,39 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-.header-main{
-    /* border: 1px solid black; */
-    background: #191a1d;
+.header-main {
+  /* border: 1px solid black; */
+  background: #191a1d;
+  color: white;
+  padding: 20px;
+}
+
+.display-flex {
+  display: flex;
+}
+.icon h1 {
+  font-family: "Lobster", cursive;
+  border-bottom: 4px solid #4b6cc1;
+}
+.icon h1:hover {
+  cursor: pointer;
+}
+.nav-ul {
+  position: absolute;
+  right: 100px;
+}
+.nav-li {
+  padding: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: larger;
+}
+.nav-li a {
+  text-decoration: none;
+  background: #191a1d;
+  color: white;
+}
+.nav-li:hover {
+  /* transition: all ease 0.2s; */
+  /* background: rgb(243, 229, 203); */
+  color: wheat;
+  cursor: pointer;
+  border-bottom: 2px solid #4b6cc1;
+}
+
+/* Media queries */
+/* Media queries */
+/* Media queries */
+
+/* For Mobiles  */
+#check,
+.checkbtn {
+  display: none;
+}
+@media (max-width: 860px) {
+  .header-main {
+    position: sticky;
+    top: 0%;
+    padding: 0%;
+    /* border: 2px solid white; */
+    /* width: auto; */
+    width: 100%;
+    height: auto;
+    /* height: 50px; */
+  }
+  .checkbtn {
+    display: block;
+  }
+  .checkbtn {
+    font-size: 30px;
     color: white;
-    padding: 20px;
-    
-}
-
-
-.display-flex{
-    display: flex;
-}
-.icon h1{
-    font-family: 'Lobster', cursive;
-    border-bottom: 4px solid #4b6cc1;
-}
-.icon h1:hover{
-    cursor: pointer;  
-    
-}
-.nav-ul{
     position: absolute;
-    right: 100px;
-}
-.nav-li{
-    padding: 20px;
-    text-decoration: none;
-    list-style-type: none;
-    font-size: larger;
-}
-.nav-li:hover{
-    /* transition: all ease 0.2s; */
-    /* background: rgb(243, 229, 203); */
-    color: wheat;
+    /* float: right; */
+    right: 10px;
+    line-height: 80px;
+    /* margin-right: 40px; */
     cursor: pointer;
-    border-bottom: 2px solid #4b6cc1;
+    /* display: none; */
+  }
+  .header-main ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #12181d;
+    top: 60px;
+    left: -120%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .header-main nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .header-main nav ul li a {
+    font-size: 20px;
+  }
+  .header-main a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
 }

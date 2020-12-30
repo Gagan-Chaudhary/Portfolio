@@ -33,7 +33,7 @@ const CardListItem = props => {
         
         <p>{props.character.alignment}</p>
         <div>
-        <a href={props.character.fb} class="fa fa-facebook" target="_blank"></a>
+        {/* <a href={props.character.fb} class="fa fa-facebook" target="_blank"></a> */}
             
         </div>
       </div>

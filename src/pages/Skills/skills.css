@@ -1,5 +1,6 @@
 .skills-main {
-  background: #e1ebe465;
+  background: #50dbb4;
+  /* background: #e1ebe465; */
   padding: 50px;
   padding-top: 60px;
   padding-bottom: 70px;
@@ -47,25 +48,45 @@
 }
 
 .skills-div {
+  margin: 0 auto;
   display: grid;
-  justify-content: center;
+
   grid-template-areas:
     "frontend backend languages "
-    "frontend version-control hosting-platform "
-    "main database footer ";
+    "frontend database languages "
+    /* "frontend  hosting-platform " */
+    "frontend hosting-platform tools"
+    "version-control hosting-platform tools"
+    ".  . . ";
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-rows: 320px 300px auto;
+  justify-content: center;
+  /* grid-auto-rows: minmax(70px,auto); */
+  /* ". version-control database " */
+  /* "mian tools  hosting-platform" */
+  /* "version-control database main " */
+  /* "main database footer " */
+  /* grid-template-rows: 3fr 1fr 2fr; */
 }
 .skill-card {
-  border: 2px solid rgb(24, 14, 14);
+  /* border: 2px solid rgb(24, 14, 14); */
   width: 300px;
   height: auto;
   padding: 20px;
   background: white;
   /* padding-left: 40px; */
   margin: 20px;
+  border-radius: 20px;
+  transition: all ease 0.5s;
 }
 .skill-card img {
   max-width: 2em;
   height: auto;
+}
+.skill-card:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 1px gray;
 }
 @import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
 .skills-main h1 {
@@ -83,4 +104,15 @@
   padding: 10px;
   /* border-bottom: 1px solid black; */
   /* width: 100px; */
+}
+
+@media (max-width: 1105px) {
+  .skills-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .skill-card {
+    margin: 20px auto;
+    padding: 0;
+  }
 }

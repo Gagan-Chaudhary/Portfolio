@@ -12,18 +12,12 @@
   background: #191a1d;
   clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
   padding: 20px;
-  padding-top: 300px;
+  padding-top: 200px;
 }
 .flex {
   display: flex;
 }
-.contact-main input,
-textarea {
-  background: #1e242c;
-  border: none;
-  padding: 10px;
-  margin: 10px;
-}
+
 .work h2 {
   color: white;
   font-size: 3.25rem;
@@ -52,17 +46,8 @@ textarea {
   /* align-items: center; */
   list-style: none;
   padding: 20px;
-  /* border: 2px solid white; */
-  /* margin: auto; */
-  /* text-decoration: none; */
 }
-.social-media ul {
-  /* width: 200px; */
-  /* margin: auto; */
-  /* display: -webkit-box; */
-  /* justify-content: center; */
-  /* align-items: center; */
-}
+
 .social-media a {
   text-decoration: none;
   transition: color ease 0.3s;
@@ -86,6 +71,57 @@ textarea {
   padding-right: 20px;
   margin: auto;
   text-align: center;
-  /* border: 2px solid white; */
-  /* align-self: start; */
+}
+
+@media (max-width: 600px) {
+  .work button {
+    font-size: 1rem;
+    transition: all ease 0.3s;
+    font-size: 1rem;
+    padding: 15px 25px;
+    outline: none;
+  }
+  .work h2 {
+    font-size: 2rem;
+  }
+  .contact-main p {
+    font-size: 1.25rem;
+  }
+  .social-media li {
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  .social-media a {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.063em;
+    font-family: "Rubik", "Arial", sans-serif;
+    /* padding: 8px; */
+    /* top: 0px; */
+    /* text-align: center; */
+    padding-top: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .contact-main {
+    padding-top: 150px;
+  }
+  .social-media a {
+    letter-spacing: 0.063em;
+    padding: 0px;
+  }
+  .work {
+    width: 40%;
+  }
+  .social-media {
+    width: 60%;
+    margin: auto;
+    /* border: 1px solid white; */
+  }
+  .social-media span {
+    /* display: none; */
+    padding-right: 2px;
+    margin: 0;
+    text-align: center;
+  }
 }

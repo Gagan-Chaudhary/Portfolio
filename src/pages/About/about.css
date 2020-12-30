@@ -13,22 +13,25 @@
   text-align: center;
   /* justify-content: center; */
 }
+
 .about-image {
   /* position: relative; */
   /* right: 0px; */
   padding: 20px;
   /* border: 2px solid white; */
+  margin: auto;
   width: 50%;
 }
 
 .about-image img {
-  width: 600px;
-  height: 600px;
+  width: 80%;
+  height: auto;
   /* border: 1px solid white; */
 }
 .about h1 {
   /* background-color: #181111; */
   font-size: 4.5rem;
+  font-weight: 400;
   font-family: "Rubik", "Arial", sans-serif;
 }
 .about h3 {
@@ -44,8 +47,8 @@
 }
 button {
   transition: all ease 0.3s;
-  font-size: 1.75rem;
-  padding: 26px 48px;
+  font-size: 1.5rem;
+  padding: 22px 40px;
   display: inline-block;
   cursor: pointer;
   border-radius: 1000px;
@@ -62,4 +65,24 @@ button:hover {
   background: #191a1d;
   /* border: 0.1px solid #4b6cc1; */
   text-decoration: none;
+}
+
+@media (max-width: 860px) {
+  .about-image img {
+    width: 80%;
+    /* width: 350px; */
+    height: auto;
+    /* border: 1px solid white; */
+  }
+  .about {
+    width: 100%;
+  }
+  .about-image {
+    width: 100%;
+    padding: 0%;
+  }
+  .flexx {
+    display: flex;
+    flex-direction: column;
+  }
 }

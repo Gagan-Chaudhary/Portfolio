@@ -11,7 +11,7 @@ import { skills } from "./skillsdata";
 
 export default function Skills() {
   return (
-    <div className="skills-main">
+    <div id="skills" className="skills-main">
         <h1>Skills</h1>
         <div className="skills-div">
        <div className="frontend skill-card">
@@ -67,7 +67,7 @@ export default function Skills() {
          </div>
        </div>
        <div className="database skill-card">
-       <h2>Databses</h2><hr/>
+       <h2>Databases</h2><hr/>
        <div className="flex-skill">
        
          {skills.databases.map((skill, index) => (
@@ -92,7 +92,19 @@ export default function Skills() {
                   ))}
          </div>
        </div>
-       {/* <div className="tools skill-card"></div> */}
+       <div className="tools skill-card">
+       <h2>Tools & Technologies</h2><hr/>
+       <div className="flex-skill">
+       
+         {skills.tools.map((skill, index) => (
+                    <span className="skill-name" key={index}>
+                      <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
+                        <img src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1"/> {skill.skillName}
+                      </a>
+                    </span>
+                  ))}
+         </div>
+       </div>
         </div>
       
     </div>

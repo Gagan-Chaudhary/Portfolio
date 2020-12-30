@@ -5,7 +5,11 @@ import './about.css'
 export default function About() {
     return (
         <>
-        <div className="about-main display-flex">
+    
+        <div id="home" className="about-main">
+      <marquee scrollamount="10">🚧 Under construction 🚧</marquee>
+            
+            <div className="display-flex flexx">
             <div className="about">
                 <h1>Hey, I'm Gagan.</h1>
                 <h3>I'm a Web developer, currently studying in IIIT Vadodara.</h3>
@@ -13,6 +17,7 @@ export default function About() {
             </div>
             <div className="about-image">
                 <img src={gagan} alt="Gagan Chaudhary Image" srcset=""/>
+            </div>
             </div>
 
         </div>

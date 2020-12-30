@@ -8,15 +8,25 @@
 .project-main h1 {
   font-family: "Langar", cursive;
   font-size: 60px;
+  display: grid;
+  justify-content: center;
 }
 
 .project {
   padding-top: 40px;
 }
 .projects-div img {
-  width: 600px;
+  width: 500px;
   height: auto;
   border: 2px solid burlywood;
+}
+.projects-div button {
+  font-size: 20px;
+  padding: 15px;
+}
+.projects-div button:hover {
+  background: white;
+  color: black;
 }
 .projects-div {
   display: grid;
@@ -29,13 +39,62 @@
   padding: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin-bottom: 30px;
+  /* background: #e2e7ee; */
+  box-shadow: 0px 0px 10px 0px gray;
+}
+.project-image {
+  padding: 20px;
+  /* border: 1px solid black; */
+  background: #e2e7ee;
 }
 .project-details {
   align-items: center;
   text-align: center;
   margin: auto;
-  padding-left: 40px;
-  padding-right: 40px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+.project-details h3 {
+  font-size: 30px;
+  font-family: "Langar", cursive;
+}
+.project-details li {
+  list-style: none;
+}
+.project-details img {
+  width: 25px;
+  border: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap");
+.tech {
+  font-family: "Oswald", sans-serif;
+  padding: 10px;
+  /* font-weight: 550; */
+}
+
+@media (max-width: 780px) {
+  .project-image img {
+    width: 100%;
+    /* width: 350px; */
+    height: 150px;
+    border: none;
+    /* border: 2px solid burlywood; */
+  }
+  .project-box button {
+    font-size: 15px;
+  }
+  .project-box {
+    padding: 0%;
+  }
+  .project-image {
+    background: none;
+    margin: auto;
+    width: 50%;
+    padding: 0%;
+    box-shadow: 0px 0px 10px 1px grey;
+  }
+  .project-details {
+    width: 50%;
+  }
 }

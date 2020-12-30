@@ -12,12 +12,13 @@ const second = grey[50];
 export default function Contact() {
     return (
         <>
-        <div className="contact-main">
+        <div id="contact" className="contact-main">
         <div className="flex">
             <div className="work">
                 <h2>Let's Work Together</h2>
                 <p>Have a project you'd like to discuss?</p>
                 <div>
+                
                 <button>Get in Touch</button>
                 </div>
             </div>

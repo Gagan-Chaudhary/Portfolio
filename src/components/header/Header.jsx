@@ -8,11 +8,15 @@ export default function Header() {
             <h1>Gagan Chaudhary</h1>
         </div>
         <div >
+        <input type="checkbox" id="check"/>
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
         <ul className="display-flex nav-ul">
-            <li className="nav-li">Home</li>
-            <li className="nav-li">About</li>
-            <li className="nav-li">Skills</li>
-            <li className="nav-li">Contact</li>
+            <li className="nav-li"><a href="#home">Home</a></li>
+            <li className="nav-li"><a href="#skills">Skills</a></li>
+            <li className="nav-li"><a href="#projects">Projects</a></li>
+            <li className="nav-li"><a href="#contact">Contact</a></li>
         </ul>
         </div>
         </div>
