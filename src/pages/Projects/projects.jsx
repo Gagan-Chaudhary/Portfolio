@@ -14,7 +14,7 @@ export default function Projects() {
                     {projects.map((project, index) => (
                             <div className="project-box" key={index}>
                             <div className="project-image">
-                            <img src={project.image} alt={project.imgAltText} rounded className="image-style m-1"/>
+                            <img src={project.image} alt={project.imgAltText} />
                             </div>
                             <div className="project-details">
                             <h3>{project.name}</h3>
@@ -26,7 +26,8 @@ export default function Projects() {
                                <li><img src={project.img5} alt="" srcset=""/><span className="tech">{project.tech5}</span></li>
                            </ul>
                            <h5>{project.details}</h5>
-                           <button>View code</button>
+                           {/* <input type="button" value="" href="https://css-tricks.com/"/> */}
+                           <button><a href={project.link} target="_blank">View code</a></button>
                             </div>
                                 
                             </div>

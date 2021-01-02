@@ -17,22 +17,42 @@
   margin: 20px 40px;
   width: 400px;
   height: 400px;
-  box-shadow: 1px 1px 10px 1px rgb(51, 44, 44);
+  /* box-shadow: 1px 1px 10px 1px rgb(51, 44, 44); */
 }
 
 .main-card img {
   width: 350px;
   /* width: 350px; */
   height: 340px;
+  /* border: 10px solid #6EC72D; */
+  background: linear-gradient(to right, #b2b647, #00AC61);
+  padding: 10px;
 }
 
 .main-card img:hover {
-  transition: all ease 0.6s;
-  transform: scale(1.25);
+  transition: all ease-in-out 0.6s;
+  transform: scale(1.35);
   cursor: pointer;
 }
 @import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
 .certificate-text {
   font-family: "Langar", cursive;
   font-size: 3rem;
+}
+
+@media (max-width:400px){
+  .main-card img {
+    width: 300px;
+    /* width: 350px; */
+    height: 300px;
+  
+  }
+}
+@media (max-width:360px){
+  .main-card img {
+    width: 270px;
+    /* width: 350px; */
+    height: 270px;
+  
+  }
 }

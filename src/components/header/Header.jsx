@@ -12,6 +12,7 @@ export default function Header() {
         <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
+  
         <ul className="display-flex nav-ul">
             <li className="nav-li"><a href="#home">Home</a></li>
             <li className="nav-li"><a href="#skills">Skills</a></li>

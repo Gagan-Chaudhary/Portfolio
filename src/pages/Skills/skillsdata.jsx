@@ -7,13 +7,10 @@ import L_REDUX from "../../assets/skills/redux.svg";
 import L_REACT_ROUTER from "../../assets/skills/react-router.svg";
 import L_MATERIALUI from "../../assets/skills/material-ui-1.svg";
 import L_REACT_BOOTSTRAP from "../../assets/skills/react-bootstrap.svg";
-import L_STYLED_COMPONENTS from "../../assets/skills/styled-components.svg";
 import L_NODE_JS from "../../assets/skills/nodejs.svg";
 import L_EXPRESS from "../../assets/skills/express.svg";
 import L_PHP from "../../assets/skills/php.svg";
-import L_FLASK from "../../assets/skills/flask.svg";
 import L_MONGODB from "../../assets/skills/mongodb.svg";
-// import L_POSTGRESQL from "../../assets/skills/postgresql.svg";
 import L_MYSQL from "../../assets/skills/mysql.svg";
 import L_GIT from "../../assets/skills/git-icon.svg";
 import L_HEROKU from "../../assets/skills/heroku.svg";
@@ -22,11 +19,12 @@ import L_GITHUB_PAGES from "../../assets/skills/github.svg";
 import L_JAVASCRIPT from "../../assets/skills/javascript.svg";
 import L_CPP from "../../assets/skills/C++.svg";
 import L_C from "../../assets/skills/C.svg";
-import L_GOLANG from "../../assets/skills/go-6.svg";
 import L_PYTHON from "../../assets/skills/python.svg";
 import L_JAVA from "../../assets/skills/java.svg";
 import L_VSCODE from "../../assets/skills/vscode.svg";
 import L_LATEX from "../../assets/skills/latex.svg";
+import L_PYCHARM from "../../assets/skills/pycharm.svg";
+import L_STARUML from "../../assets/skills/staruml.svg";
 
 
 export const skills = {
@@ -168,12 +166,7 @@ export const skills = {
       },
     ],
     databases: [
-      // {
-      //   link: "https://www.postgresql.org/",
-      //   imgAltText: "PostgreSQL",
-      //   imgSrc: L_POSTGRESQL,
-      //   skillName: "PostgreSQL",
-      // },
+
       {
         link: "https://www.mysql.com/",
         imgAltText: "MS-SQL",
@@ -203,28 +196,23 @@ export const skills = {
         skillName: "VS Code",
       },
       {
-        link: "",
-        imgAltText: "GIT",
-        imgSrc: L_GIT,
+        link: "https://www.jetbrains.com/pycharm/",
+        imgAltText: "PYCHARM",
+        imgSrc: L_PYCHARM,
         skillName: "PyCharm",
       },
-      {
-        link: "",
-        imgAltText: "GIT",
-        imgSrc: L_GIT,
-        skillName: "Visual Paradigm",
-      },
+
       {
         link: "https://www.latex-project.org/",
-        imgAltText: "GIT",
+        imgAltText: "LATEX",
         imgSrc: L_LATEX,
         skillName: "Latex",
       },
       {
-        link: "",
-        imgAltText: "GIT",
-        imgSrc: L_GIT,
-        skillName: "RE-Tools",
+        link: "https://staruml.io/",
+        imgAltText: "STARUML",
+        imgSrc: L_STARUML,
+        skillName: "Star UML",
       }
     ]
   };

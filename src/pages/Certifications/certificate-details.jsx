@@ -7,11 +7,7 @@ import responsive from '../../assets/certificates/Responsive.png'
 const characters = [
     {
       id: 1,
-      // img : "require('../../Images/a2.jfif')",
-      // img : {<img src={require('../../Images/a2.jfif')} alt="SmartComparison" srcset=""/>} ,
-    //   python
       Image : python,
-    //   Image : "Python.jpg",
       name: "Python Data Structures",
       fb: "https://www.facebook.com/gagan.chaudhary.1293/"
     },

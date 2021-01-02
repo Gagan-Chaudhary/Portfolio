@@ -1,17 +1,17 @@
 import React from 'react'
+// import Particles from 'react-particles-js';
+// import particlesConfig from '../../config/particlesjs-config';
+// import particlejsBubble from '../../config/particlesjs-config-bubble';
+// import particlejsSnow from '../../config/particlesjs-config-snow';
 import './skills.css'
 import { skills } from "./skillsdata";
-// import characters from './skillsdata'
-// import skill from './skillsdata.jsx/skills'
-// impoer './'
-
-
-
-
 
 export default function Skills() {
   return (
-    <div id="skills" className="skills-main">
+    <>
+    
+    <div id="skills" className="skills-main" > 
+     
         <h1>Skills</h1>
         <div className="skills-div">
        <div className="frontend skill-card">
@@ -108,6 +108,9 @@ export default function Skills() {
         </div>
       
     </div>
+    
+   
+    </>
   );
 }
 

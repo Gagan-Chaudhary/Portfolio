@@ -10,7 +10,7 @@
 }
 .contact-main {
   background: #191a1d;
-  clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+  /* clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%); */
   padding: 20px;
   padding-top: 200px;
 }
@@ -45,9 +45,17 @@
   /* display: -webkit-box; */
   /* align-items: center; */
   list-style: none;
-  padding: 20px;
+  padding: 0px;
+  vertical-align: bottom;
+  /* display: inline; */
+  /* border: 2px solid white; */
 }
-
+.icon-align {
+  display: inline-flex;
+  vertical-align: text-bottom;
+  box-sizing: inherit;
+  /* text-align: center; */
+}
 .social-media a {
   text-decoration: none;
   transition: color ease 0.3s;
@@ -56,22 +64,37 @@
   text-transform: uppercase;
   letter-spacing: 0.063em;
   font-family: "Rubik", "Arial", sans-serif;
-  padding: 10px;
+  /* padding: 10px; */
   /* top: 0px; */
   text-align: center;
+  /* border: 2px solid white; */
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 20px;
 
-  position: relative;
-  top: -10px;
+  /* position: relative; */
+  /* top: -10px; */
 }
 .social-media a:hover {
   color: #3de0e6;
 }
 .social-media span {
   /* display: none; */
+  /* border: 1px solid yellow; */
+  /* position: relative; */
+  /* bottom: -10px; */
   padding-right: 20px;
+  padding-top: 20px;
   margin: auto;
   text-align: center;
 }
+.work a {
+  text-decoration: none;
+  color: white;
+}
+/* media query  */
+/* media query  */
+/* media query  */
 
 @media (max-width: 600px) {
   .work button {
@@ -81,9 +104,11 @@
     padding: 15px 25px;
     outline: none;
   }
+
   .work h2 {
     font-size: 2rem;
   }
+
   .contact-main p {
     font-size: 1.25rem;
   }
@@ -91,6 +116,7 @@
     padding: 0px;
     padding-bottom: 20px;
   }
+
   .social-media a {
     font-weight: 500;
     text-transform: uppercase;
@@ -99,6 +125,7 @@
     /* padding: 8px; */
     /* top: 0px; */
     /* text-align: center; */
+    margin-top: 5px;
     padding-top: 10px;
   }
 }
@@ -123,5 +150,18 @@
     padding-right: 2px;
     margin: 0;
     text-align: center;
+  }
+}
+@media (max-width: 430px) {
+  .contact-main {
+    padding-top: 30px;
+  }
+  .social-media a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 360px) {
+  .social-media a {
+    font-size: 10px;
   }
 }

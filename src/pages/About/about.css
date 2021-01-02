@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 .about-main {
   background: #191a1d;
+  /* position: relative; */
+  /* background: transparent; */
   color: white;
   padding-bottom: 30px;
   /* clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%); */
@@ -34,16 +36,103 @@
   font-weight: 400;
   font-family: "Rubik", "Arial", sans-serif;
 }
+.about span:hover {
+  color: white;
+  font-weight: 500;
+  transition: all ease 0.1s;
+  cursor: pointer;
+  position: relative;
+  bottom: 5px;
+  /* line-height: 2px; */
+}
+.wave {
+  position: relative;
+  animation-name: wave-animation;
+  animation-duration: 2.5s; 
+  animation-iteration-count: infinite; 
+  transform-origin: 70% 70%; 
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } 
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .about h3 {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 500;
   padding: 20px;
   margin: auto;
   text-align: center;
-  width: 60%;
+  width: 85%;
   letter-spacing: 2px;
   word-spacing: 4px;
   font-family: "Rubik", "Arial", sans-serif;
+}
+.change::before {
+  content: "";
+  animation: animate infinite 10s;
+  transition: all ease-in-out;
+  cursor: pointer;
+  margin: 0%;
+  padding: 0%;
+  display: inline-block;
+  /* padding-left: 10px; */
+}
+
+.change {
+  display: inline;
+  color: brown;
+  /* position: relative; */
+  /* overflow: scroll; */
+  /* font-size: 80%; */
+  /* border: 1px solid wheat; */
+  margin: 0%;
+  padding: 0%;
+}
+@keyframes animate {
+  0% {
+    content: "Web Developer 👨‍💻";
+  }
+
+  50% {
+    content: "Junior 👨‍🎓";
+    color: coral;
+    font-weight: bolder;
+    font-weight: bolder;
+  }
+
+  75% {
+    content: "Gym Freak 🏋️‍♀️";
+    color: rgb(233, 173, 23);
+    font-weight: bolder;
+  }
+  100% {
+    content: "Web Developer 👨‍💻";
+    font-weight: bolder;
+  }
 }
 button {
   transition: all ease 0.3s;
@@ -61,11 +150,24 @@ button {
   outline: none;
   border: 0.1px solid #4b6cc1;
 }
+.about h3 a {
+  text-decoration: none;
+  color: rgb(29, 175, 29);
+  font-weight: bold;
+}
 button:hover {
   background: #191a1d;
   /* border: 0.1px solid #4b6cc1; */
   text-decoration: none;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* media query  */
+/* media query  */
+/* media query  */
 
 @media (max-width: 860px) {
   .about-image img {
@@ -74,8 +176,19 @@ button:hover {
     height: auto;
     /* border: 1px solid white; */
   }
+
   .about {
     width: 100%;
+  }
+  .about h1 {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    font-size: 4rem;
+  }
+  .about h3 {
+    /* width: 200px; */
+    /* border: 2px solid white; */
   }
   .about-image {
     width: 100%;
@@ -84,5 +197,14 @@ button:hover {
   .flexx {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 460px) {
+  .about h1 {
+    font-size: 3.5rem;
+  }
+  .about h3 {
+    font-size: 1.4rem;
   }
 }

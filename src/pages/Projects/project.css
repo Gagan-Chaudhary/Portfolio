@@ -1,7 +1,7 @@
 .project-main {
   padding-top: 150px;
   padding-bottom: 150px;
-  /* background: grey */
+  background:#CAD5E2;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
@@ -18,16 +18,16 @@
 .projects-div img {
   width: 500px;
   height: auto;
-  border: 2px solid burlywood;
+  /* border: 2px solid burlywood; */
+}
+.projects-div img:hover {
+  cursor: pointer;
 }
 .projects-div button {
   font-size: 20px;
   padding: 15px;
 }
-.projects-div button:hover {
-  background: white;
-  color: black;
-}
+
 .projects-div {
   display: grid;
   justify-content: center;
@@ -35,8 +35,10 @@
   padding-top: 40px;
 }
 .project-box {
+  border-radius: 5px;
   display: flex;
   padding: 20px;
+  background: white;
   padding-top: 30px;
   padding-bottom: 30px;
   /* border: 2px solid black; */
@@ -46,13 +48,23 @@
 }
 .project-image {
   padding: 20px;
+  margin: auto;
+  /* width: 60%; */
   /* border: 1px solid black; */
-  background: #e2e7ee;
+  background: #292c2c;
 }
 .project-details {
   align-items: center;
   text-align: center;
   margin: auto;
+  width: 40%;
+  padding-left: 30px;
+  padding-right: 30px;
+  /* border: 2px solid black; */
+}
+.project-details ul {
+  display: grid;
+  justify-content: center;
 }
 @import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
 .project-details h3 {
@@ -61,40 +73,109 @@
 }
 .project-details li {
   list-style: none;
+  /* border: 1px solid black; */
+  text-align: start;
+  /* height: auto; */
+  /* padding: 10px; */
 }
 .project-details img {
-  width: 25px;
+  /* position: relative; */
+  /* position: absolute; */
+  /* bottom: -7px; */
+  width: 35px;
   border: none;
+}
+.project-details a {
+  text-decoration: none;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.project-details a:hover {
+  color: black;
+}
+.projects-div button:hover {
+  color: black;
+  background: white;
 }
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap");
 .tech {
   font-family: "Oswald", sans-serif;
   padding: 10px;
+  position: relative;
+  bottom: 10px;
   /* font-weight: 550; */
 }
 
-@media (max-width: 780px) {
+@media (max-width: 870px) {
+  .project-main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .project-image img {
     width: 100%;
     /* width: 350px; */
-    height: 150px;
+    height: auto;
     border: none;
     /* border: 2px solid burlywood; */
+  }
+  .project-image {
+    /* border: 2px solid yellow; */
+    width: 50%;
+    padding: 20px;
+    margin: auto;
   }
   .project-box button {
     font-size: 15px;
   }
   .project-box {
-    padding: 0%;
+    padding-left: 0px;
+    padding-right: 0%;
+    padding-bottom: 10px;
+    /* padding: 10px; */
   }
-  .project-image {
-    background: none;
-    margin: auto;
-    width: 50%;
-    padding: 0%;
-    box-shadow: 0px 0px 10px 1px grey;
-  }
+
   .project-details {
     width: 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: small;
+  }
+}
+@media (max-width: 550px) {
+  .project-main {
+    padding-top: 30px;
+  }
+  .project-box {
+    padding-top: 0%;
+    /* border: 2px solid black; */
+  }
+  .project-image {
+    padding: 2px;
+    /* padding-bottom: 2px; */
+  }
+  .project-image img {
+    height: 100px;
+  }
+}
+@media (max-width: 370px) {
+  .project-details h3 {
+    font-size: 25px;
+  }
+  .project-details{
+    text-align: start;
+    /* border: 2px solid ; */
+    padding-left: 0%;
+  }
+.tech{
+  padding: 5px;
+  font-size: 10px;
+  
+}
+  .project-details a{
+    font-size: 10px;
+    padding: 0%;
   }
 }
