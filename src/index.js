@@ -7,9 +7,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <div id="particles-js"></div>
-
-<script src="particles.js"></script>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

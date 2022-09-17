@@ -9,7 +9,7 @@ import L_MATERIALUI from "../../assets/skills/material-ui-1.svg";
 import L_REACT_BOOTSTRAP from "../../assets/skills/react-bootstrap.svg";
 import L_NODE_JS from "../../assets/skills/nodejs.svg";
 import L_EXPRESS from "../../assets/skills/express.svg";
-import L_PHP from "../../assets/skills/php.svg";
+// import L_PHP from "../../assets/skills/php.svg";
 import L_MONGODB from "../../assets/skills/mongodb.svg";
 import L_MYSQL from "../../assets/skills/mysql.svg";
 import L_GIT from "../../assets/skills/git-icon.svg";
@@ -105,12 +105,12 @@ export const skills = {
         imgSrc: L_EXPRESS,
         skillName: "Express",
       },
-      {
-        link: "https://www.djangoproject.com/",
-        imgAltText: "Django",
-        imgSrc: L_PHP,
-        skillName: "Php",
-      }
+      // {
+      //   link: "https://www.djangoproject.com/",
+      //   imgAltText: "Django",
+      //   // imgSrc: L_PHP,
+      //   skillName: "Php",
+      // }
      
     ],
     hostingPlatforms: [

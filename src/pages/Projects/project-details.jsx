@@ -8,7 +8,7 @@ import L_REACT from "../../assets/skills/react.svg";
 import L_MATERIALUI from "../../assets/skills/material-ui-1.svg";
 import L_NODE_JS from "../../assets/skills/nodejs.svg";
 import L_EXPRESS from "../../assets/skills/express.svg";
-import L_PHP from "../../assets/skills/php.svg";
+// import L_PHP from "../../assets/skills/php.svg";
 import L_FIREBASE from "../../assets/skills/firebase.svg";
 
 
@@ -21,7 +21,7 @@ const projects=[
         tech3:"PHP",
         img1: L_HTML5,
         img2: L_CSS3,
-        img3: L_PHP,
+        // img3: L_PHP,
     
         link:"https://github.com/Gagan-Chaudhary/Attendance-Management-System"
     },
