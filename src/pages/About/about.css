@@ -48,9 +48,9 @@
 .wave {
   position: relative;
   animation-name: wave-animation;
-  animation-duration: 2.5s; 
-  animation-iteration-count: infinite; 
-  transform-origin: 70% 70%; 
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
   display: inline-block;
 }
 
@@ -75,7 +75,7 @@
   }
   60% {
     transform: rotate(0deg);
-  } 
+  }
   100% {
     transform: rotate(0deg);
   }
@@ -114,11 +114,11 @@
 }
 @keyframes animate {
   0% {
-    content: "Web Developer 👨‍💻";
+    content: "Full Stack Developer 👨‍💻";
   }
 
   50% {
-    content: "Junior 👨‍🎓";
+    content: "Project Manager 👨‍💼";
     color: coral;
     font-weight: bolder;
     font-weight: bolder;

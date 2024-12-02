@@ -1,12 +1,16 @@
-import React from 'react'
+// import React from 'react'
 import './contact.css'
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import MailIcon from '@material-ui/icons/Mail';
 
-import grey from '@material-ui/core/colors/grey';
+// Updated imports for MUI v6 icons
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import MailIcon from '@mui/icons-material/Mail';
+
+// Updated colors import for MUI v6
+import { grey } from '@mui/material/colors';
+
 const second = grey[50];
 
 export default function Contact() {
@@ -18,8 +22,7 @@ export default function Contact() {
                 <h2>Let's Work Together</h2>
                 <p>Have a project you'd like to discuss?</p>
                 <div>
-                
-                <button><a href="mailto:gaganveermaan@gmail.com">Get in Touch</a></button>
+                    <button><a href="mailto:gaganveermaan@gmail.com">Get in Touch</a></button>
                 </div>
             </div>
             <div className="social-media">
@@ -28,12 +31,9 @@ export default function Contact() {
                     <li><div className="icon-align"><TwitterIcon fontSize="large" color="primary"/><a href="https://twitter.com/chaudharyGagan9" target="_blank">Twitter</a></div></li>
                     <li><div className="icon-align"><GitHubIcon fontSize="large" color="black"/><a href="https://github.com/Gagan-Chaudhary" target="_blank">Github</a></div></li>
                     <li><div className="icon-align"><InstagramIcon fontSize="large" color="secondary"/><a href="https://www.instagram.com/da__hunk/" target="_blank">Instagram</a></div></li>
-                 
-                    
                 </ul>
             </div>
         </div>
-        
         </div>
         </>
     )
